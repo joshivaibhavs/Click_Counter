@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <style>
+        .main-container {
+            height: 100vh;
+        }
+
+        .row {
+            height: 100%;
+        }
+        #click-counter {
+            height: 25vh;
+        }
+    </style>
+    <div class="container-fluid main-container">
+        <div class="d-flex flex-row row">
+            <div class="d-flex flex-column col-4"></div>
+            <div class="d-flex flex-column col-12 col-md-4 justify-content-center">
+                <div class="d-flex flex-column mb-4 text-center">
+                    <h1 id="bpm-text" class="display-1">BPM: 00</h1>
+                </div>
+                <div class="d-flex flex-column my-4">
+                    <button id="click-counter" class="btn btn-primary">Tap!</button>
+                </div>
+                <div class="d-flex flex-column my-4">
+                    <button id="reset" class="btn btn-danger">Reset</button>
+                </div>
+            </div>
+            <div class="d-flex flex-column col-4"></div>
+        </div>
+    </div>
+    <script defer src="assets/js/bootstrap.min.js"></script>
+    <script defer src="app/main.js"></script>
+</body>
+
+</html>
